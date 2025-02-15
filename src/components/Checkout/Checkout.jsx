@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import axios from 'axios'
 import { useFormik, useFormikContext, validateYupSchema } from 'formik'
 
-import { UserContext } from '../../Context/Usercontext'
+import { UserContext } from '../../Context/UserContext.jsx'
 import { CartContext } from '../../Context/UserCart'
 import toast from 'react-hot-toast'
 
