@@ -44,9 +44,9 @@ function App() {
       {path:"categories",element:<ProtectRoute> <Categories/></ProtectRoute>},
       {path:"products",element:<ProtectRoute> <Products/></ProtectRoute>},
       {path:"brands",element:<ProtectRoute> <Brands/></ProtectRoute>},
-      {path:"checkout",element:<ProtectRoute> <Checkout/></ProtectRoute>},
+      {path:"checkout",element:<Checkout/>},
       {path:"productsDetails/:id",element:<ProtectRoute> <ProductsDetails/></ProtectRoute>},
-      {path:"allorders",element:<ProtectRoute> <AllOrders/></ProtectRoute>},
+      {path:"allorders",element: <AllOrders/>},
     ]
   }
   ]
