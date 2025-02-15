@@ -28,7 +28,7 @@ export default function Checkout() {
     setfail(null)
     try{
       setloading(true)
-      let {data}= await axios.post(`https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${Cart.data.cartId}?url=http://localhost:${Port}`,shippingAddress,{
+      let {data}= await axios.post(`https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${Cart.data.cartId}?https://e-commerce-sj35.vercel.app/allorders`,shippingAddress,{
         headers:{
           token:localStorage.getItem("Token")
       }
