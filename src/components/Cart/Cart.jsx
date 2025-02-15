@@ -12,7 +12,7 @@ export default function Cart() {
   return <>
 
 {Cart?.data?.data?.products?.length > 0?
-<div className=" overflow-x-auto shadow-md sm:rounded-lg mt-[50px]">
+<div className=" overflow-x-auto shadow-md sm:rounded-lg mt-[50px] h-svh">
   <Link to={"/checkout"}>
 <button  className=" m-3 text-lg font-medium  w-[1/7] h-[5%] top-[0px] left-1  text-white bg-main hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg  px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
    Payment
