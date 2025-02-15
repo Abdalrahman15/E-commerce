@@ -24,7 +24,7 @@ useEffect(() => {
 
   if(!wellcome){
     toast("Welcome Back "+  decoded.name,{
-      duration:10000
+      duration:4000
   
     })
     sessionStorage.setItem("Seen","true")
