@@ -18,7 +18,7 @@ export default function Checkout() {
   const [fail, setfail] = useState(null)
    let {userToken,setUserToken}= useContext(UserContext)
    let {Cart}= useContext(CartContext)
-   const [Port, setPort] = useState(0)
+   const [Port, setPort] = useState(null)
 
    
 
@@ -54,7 +54,7 @@ export default function Checkout() {
   useEffect(() => {
 
    console.log(window.location.port);
-   setPort(window.location.port)
+   setPort(window?.location?.port)
   
     return () => {
       
@@ -88,7 +88,7 @@ export default function Checkout() {
 
 
 
-<form className="container p-[20px] mx-auto mt-[25px] w-full" onSubmit={formik.handleSubmit}>
+<form className="container p-[20px] mx-auto mt-[25px] w-full h-svh" onSubmit={formik.handleSubmit}>
 <h1 className='py-10 text-[25px]'>Login  now</h1>
 <div className="relative z-0 w-full mb-5 group">
     <label htmlFor="details" className='my-10 p-3'>Details:</label>

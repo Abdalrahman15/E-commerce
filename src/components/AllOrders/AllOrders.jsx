@@ -68,7 +68,7 @@ export default function AllOrders() {
 
   return <>
 
-  <div className='mt-[100px]'>
+  <div className='mt-[100px] '>
   <div className='p-5 bg-main text-center text-3xl text-white rounded'>
     <span>Total Prices : </span>
   <span>
