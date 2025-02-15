@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import axios from 'axios'
 import { useFormik, useFormikContext, validateYupSchema } from 'formik'
-import { useNavigate } from 'react-router-dom'
+
 import { UserContext } from '../../Context/Usercontext'
 import { CartContext } from '../../Context/UserCart'
 import toast from 'react-hot-toast'
@@ -16,7 +16,6 @@ export default function Checkout() {
   const [loading, setloading] = useState(false)
   const [sucess, setsucess] = useState(null)
   const [fail, setfail] = useState(null)
-  let navigate = useNavigate()
    let {userToken,setUserToken}= useContext(UserContext)
    let {Cart}= useContext(CartContext)
    const [Port, setPort] = useState(0)
@@ -76,7 +75,7 @@ export default function Checkout() {
     initialValues:{
       details:"",
       phone:"",
-      phone:""
+      
     
     }
     ,onSubmit:checkout

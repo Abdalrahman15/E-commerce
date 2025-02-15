@@ -21,8 +21,8 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { Toaster } from 'react-hot-toast'
 import AllOrders from './components/AllOrders/AllOrders.jsx'
 import WhishContextProvider from './Context/WishList.jsx'
-import UserContextProvider from './Context/UserContext.jsx'
 import UserCartProvider from "./Context/UserCart.jsx"
+import UserContextProvider from "./Context/UserContext.jsx"
 
 
 
