@@ -69,7 +69,7 @@ export default function Login() {
   
   return <>
 
-<form className="container p-[20px] mx-auto mt-[25px] w-full" onSubmit={formik.handleSubmit}>
+<form className="container p-[20px] mx-auto mt-[25px] w-full h-svh" onSubmit={formik.handleSubmit}>
 <h1 className='py-10 text-[25px]'>Login  now</h1>
 <div className="relative z-0 w-full mb-5 group">
     <label htmlFor="email" className='my-10 p-3'>E-mail:</label>

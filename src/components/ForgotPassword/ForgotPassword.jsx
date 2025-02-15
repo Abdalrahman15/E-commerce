@@ -77,7 +77,7 @@ export default function ForgotPassword() {
 
   return<>
 
-  <form className='mt-[50px]' onSubmit={formik.handleSubmit}>
+  <form className='mt-[50px] h-svh' onSubmit={formik.handleSubmit}>
     <div className="relative z-0 w-full mb-5 group">
     <label htmlFor="email" className='my-10 p-3 '>E-mail:</label>
     <input type="email" name='email' id='email' className=' border border-gray-300 block rounded w-full h-[35px] p-3' value={formik.values.email} onChange={formik.handleChange} onBlur={formik.handleBlur}  />
